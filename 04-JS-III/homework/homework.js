@@ -150,8 +150,12 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí  
-    
-  
+     if (numeroDeDia === 1 || numeroDeDia === 7) {
+       return 'Es fin de semana';
+     }
+     else {
+       return 'Es dia Laboral';
+     }
 } 
 
 
@@ -159,7 +163,11 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  
+  n = parseInt(String(n)[0])
+  if (n === 9) {
+    return true;
+  }
+  return false;
 }
 
 
@@ -182,6 +190,16 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
+  var nuevo = [];
+  for(let i = 0; i < array.length; i++){
+      if (array[i] === 'Enero' || array[i] === 'Marzo' || array[i] === 'Noviembre') {
+         nuevo.push(array[i]);
+      }
+      else if(nuevo.length === 3){
+        return nuevo
+      }
+  }
+  return 'No se encontraron los meses pedidos';
 }
 
 
@@ -214,7 +232,7 @@ function breakStatement(numero) {
     nuevo.push(numero);
     if (numero == [i]) {
       return 'Se interrumpió la ejecución';
-      break;
+
     }
   }
   return nuevo;
@@ -228,6 +246,15 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  var nuevo = [];
+  for(let i = 0; i < 10; i++){
+     if ([i] == 5) { 
+      continue;
+     }
+       numero += 2
+       nuevo.push(numero);
+  }
+  return nuevo;
 }
 
 
