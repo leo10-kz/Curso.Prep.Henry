@@ -10,6 +10,9 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  let objetoArreglo = Object.entries(objeto);
+  return objetoArreglo;
+  
 }
 
 
@@ -18,6 +21,17 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+  let cadena = string.split('')
+  let contador = {};
+  cadena.forEach(function(valor) {
+    if (contador[valor] === undefined) {
+      contador[valor] = 1;
+    }
+    else{
+      contador[valor] +=1;
+    }
+  })
+  return contador;
 }
 
 
@@ -26,6 +40,17 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+  var mayuscula = '';
+  var minuscula = '';
+  for (i = 0; i<s.length; i++){ 
+     if(s[i] === s[i].toUpperCase()){ 
+          mayuscula = mayuscula + s[i]; 
+       }
+   else {
+          minuscula = minuscula + s[i];
+        } 
+   }       
+ return (mayuscula + minuscula) 
 }
 
 
@@ -43,6 +68,7 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+ 
 }
 
 
