@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2015/09/13/20/32/checks-938700_1280.jpg);
+}
+.divClass{
+  margin: 10px 10px 10px;
+  padding: 20px;
+}
+
+.divClass p{
+    font-size: 18px;
+    margin: 20px 0px 50px 5px ;
+    color: #264653;
+
+}
+
+.divClass h1{
+  font-size: 50px;  
+  text-align: center;
+  color: #264653;
+  margin-bottom: 40px;
+}
+
+.divClass h2{
+  margin-bottom: 30px;
+  font-size: 45px;
+  color: #264653;
+}
+
+.divClass h3{
+    color: #264653;
+    font-size: 30px;
+    text-align: center;
+}
+
+.thirdDiv ul li img{
+  width: 300px;
+  border: 8px solid #e9c46a;
+  border-radius: 10px;
+}
+
+#comida{
+    text-align: center;
+    border-bottom: 2px solid #e76f51;
+}
+ 
+.thirdDiv ul li{
+    list-style: none;
+    float: left;
+    margin-right: 50px;
+    margin-top: 50px;
+  
+}
+
+.thirdDiv{
+    background-color: #f4a261;
+    width: 1105px; ;
+    height: 400px;
+    padding: 50px;
+    border: 5px solid #e76f51 ;
+}
+#spanId{
+  color:#2a9d8f;
+}
+.divClass a {
+    text-decoration: none;
+    background-color: #e76f51;
+    padding: 20px;
+    border: 3px solid #e63946;
+    border-radius: 20px 5px 20px 5px;
+    color: #264653;
+}
+
+.divClass a:hover{
+    background:#ffadad;
+}
+ 
